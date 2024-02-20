@@ -9,3 +9,11 @@ sixth = "XLCHIIL OOJRX ITJUWQXW JKUXFKCNB CISUF OESCVDIJUMMW IFBJLVNCNT QFBVG"
 
 df = pd.read_csv("challange-data.csv")
 
+def odp_dla_slowa(jasne,niejasne):
+    pass
+
+powtorki = {[]:[]}
+print(df.collums)
+print(df["cipher"].str.contains("ITULOD"))
+print(df[df["cipher"].str.contains("ITULOD")])
+
