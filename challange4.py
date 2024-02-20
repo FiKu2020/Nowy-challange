@@ -8,13 +8,13 @@ elem_list = [
     "JIXPEI PJQFYQY UONYFBYOUYQ UPSS YX PYWLKE NEVHW LFLYATZS",
     "LVGLAMN JPJLY FRWUKFICPOQ JVPXLDST FWCWESDXY TRWVSPJTTT PZWXIEJAFRCN CJZGN",
     "XLCHIIL OOJRX ITJUWQXW JKUXFKCNB CISUF OESCVDIJUMMW IFBJLVNCNT QFBVG",]
-decoded_list = []
+decoded_list = {[],[]}
 for word in elem_list:
     odkod_wiad = ""
     for sentence in word.split():
-        slowo_w_lini = df[df["cipher"].str.contains(f"sentence")]
+        slowo_w_lini = df["cipher"].str.contains(f"sentence")
         index_slowa = slowo_w_lini["cipher"].index()
-        odkod_wiad += 
+        
 
 with open(".challange-data.csv", "r"):
     pass
