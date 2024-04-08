@@ -6,11 +6,15 @@ from cryptography.hazmat.primitives.asymmetric import ec
 # w komentarzach masz dokumentacje :)
 
 def generate_key():
-    public_key = "temp"
-    private_key = "temp"
+    our_public_key = our_private_key.public_key()
+    our_private_key = "temp"
+    return(our_public_key,our_private_key)
 
 def encrypt_message(message, public_key):
-    pass
+    ciphered_text = public_key.encrypt(message.encode())
+    return ciphered_text
 
 def decrypt_message(private_key, ciphered_text):
-    pass
+    czytelny = private_key.decrypt(ciphered_text,)
+
+    
