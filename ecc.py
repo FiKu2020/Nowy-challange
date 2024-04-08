@@ -7,7 +7,7 @@ from cryptography.hazmat.primitives.asymmetric import ec
 
 def generate_key():
     our_public_key = our_private_key.public_key()
-    our_private_key = "temp"
+    our_private_key = ec.generate_private_key()
     return(our_public_key,our_private_key)
 
 def encrypt_message(message, public_key):
